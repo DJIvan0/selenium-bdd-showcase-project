@@ -1,6 +1,6 @@
 Feature: Adding an item to the shopping cart
 
-	Scenario Outline: Picking color and size of the item and adding it to the shopping cart
+	Scenario: Picking color and size of the item and adding it to the shopping cart
 	Given User clicks on a certain product from the home page
 	When User selects the size for the chosen product
 	And Selects the color for the chosen product
