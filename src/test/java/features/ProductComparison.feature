@@ -1,6 +1,6 @@
 Feature: Comparing two different products
 
-  Scenario Outline: Adding two products to a comparing list and viewing the list
+  Scenario: Adding two products to a comparing list and viewing the list
     Given User selects the first product from the home page
     When User adds the first product to the comparing list
     And User goes back to the home page
