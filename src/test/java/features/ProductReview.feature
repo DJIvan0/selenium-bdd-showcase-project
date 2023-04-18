@@ -1,6 +1,6 @@
 Feature: Leaving a review for a product
 
-  Scenario Outline: Going into review section for the selected product and filling out a review
+  Scenario: Going into review section for the selected product and filling out a review
     Given User selects a certain product from the home page
     When User goes to the review section on the product page
     And Enters a nickname for the review
