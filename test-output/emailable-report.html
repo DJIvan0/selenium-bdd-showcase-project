@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="https://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -8,14 +8,88 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">76.082</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">269.077</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">runners.MagentoStoreCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="4">1672920218543</td><td rowspan="4">16281</td></tr><tr class="passedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">runners.MagentoStoreCucumberRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1687523006037</td><td rowspan="2">67018</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="18">runners.MagentoStoreCucumberRunner</td><td><a href="#m2">runScenario</a></td><td rowspan="18">1687522866409</td><td rowspan="18">10854</td></tr><tr class="passedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m9">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m10">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m11">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m12">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m13">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m14">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m15">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m16">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m17">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m18">runScenario</a></td></tr><tr class="passedeven"><td><a href="#m19">runScenario</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;User filling out required username and password and signing in&quot;</td><td>&quot;User sign in&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Picking color and size of the item and adding it to the shopping cart&quot;</td><td>&quot;Adding an item to the shopping cart&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Adding two products to a comparing list and viewing the list&quot;</td><td>&quot;Comparing two different products&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Going into review section for the selected product and filling out a review&quot;</td><td>&quot;Leaving a review for a product&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Matching passwords during registration&quot;</td><td>&quot;Registration&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #password\-confirmation\-error
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [61c8aae7-4e9f-43eb-885f-979989cb83e5, findElement {using=id, value=password-confirmation-error}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:5381, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 96428, moz:profile: C:\Users\Juan\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:5381/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61c8aae7-4e9f-43eb-885f-979989cb83e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
+	at pageObjects.RegistrationPage.validateMatchingPasswords(RegistrationPage.java:155)
+	at stepDefinitions.RegistrationSteps.message_about_passwords_not_matching_should_not_appear(RegistrationSteps.java:124)
+	at ✽.Message about passwords not matching should not appear(file:///C:/Users/Juan/Documents/Programiranje/Selenium/SeleniumBDDShowcaseProject/src/test/java/features/Registration.feature:53)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Valid email input during registration&quot;</td><td>&quot;Registration&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_address\-error
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [15248087-f5c2-415f-9fd2-496fb4b223a8, findElement {using=id, value=email_address-error}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:12263, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 70356, moz:profile: C:\Users\Juan\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:12263/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 15248087-f5c2-415f-9fd2-496fb4b223a8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
+	at pageObjects.RegistrationPage.validateEmailField(RegistrationPage.java:110)
+	at stepDefinitions.RegistrationSteps.message_about_changing_the_input_to_a_valid_format_should_not_appear(RegistrationSteps.java:81)
+	at ✽.Message about changing the input to a valid format should not appear(file:///C:/Users/Juan/Documents/Programiranje/Selenium/SeleniumBDDShowcaseProject/src/test/java/features/Registration.feature:33)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Remove product from comparison list&quot;</td><td>&quot;Product comparison&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Passwords not matching during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Adding product to cart without any fields filled&quot;</td><td>&quot;Shopping cart&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Invalid email input during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Leaving a review without any fields filled&quot;</td><td>&quot;Product review&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password input with greater than minimal required length during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Adding product to comparison list and viewing it by clicking the link from confirmation message&quot;</td><td>&quot;Product comparison&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password input with smaller than minimal required length during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Register without any fields filled&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password strength is very strong during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password input of minimal required length during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Adding product to cart with all mandatory fields filled&quot;</td><td>&quot;Shopping cart&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Adding product to comparison list and viewing it by clicking the header link&quot;</td><td>&quot;Product comparison&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Register with all mandatory fields filled and subscription checked&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Leaving a review with all mandatory fields filled&quot;</td><td>&quot;Product review&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password strength is strong during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Password strength is weak during registration&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">runners.MagentoStoreCucumberRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Register with all mandatory fields filled&quot;</td><td>&quot;Registration&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

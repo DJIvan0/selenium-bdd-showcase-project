@@ -9,7 +9,7 @@ static ExtentReports extentReport;
 	
 	public static ExtentReports getExtentReport() {
 		
-		String extentReportPath=System.getProperty("user.dir")+"\\reports\\extentreport.html";
+		String extentReportPath=System.getProperty("user.dir")+"\\target\\extentreport.html";
 		ExtentSparkReporter reporter=new ExtentSparkReporter(extentReportPath);
 		reporter.config().setReportName("Magento Demo Store Automation Results");
 		reporter.config().setDocumentTitle("Test Results");

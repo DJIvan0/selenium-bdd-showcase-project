@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +20,11 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Juan\Documents\Programiranje\Selenium\SeleniumBDDShowcaseProject\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\Juan\AppData\Local\Temp\testng-eclipse-94818480\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,36 +91,125 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">20 methods, 2 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Matching passwords during registration&quot;, &quot;Registration&quot;)">runScenario("Matching passwords during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid email input during registration&quot;, &quot;Registration&quot;)">runScenario("Valid email input during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User filling out required username and password and signing in&quot;, &quot;User sign in&quot;)">runScenario("User filling out required username and password and signing in", "User sign in")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Remove product from comparison list&quot;, &quot;Product comparison&quot;)">runScenario("Remove product from comparison list", "Product comparison")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Picking color and size of the item and adding it to the shopping cart&quot;, &quot;Adding an item to the shop...)">runScenario("Picking color and size of the item and adding it to the shopping cart", "Adding an item to the shop...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Passwords not matching during registration&quot;, &quot;Registration&quot;)">runScenario("Passwords not matching during registration", "Registration")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding two products to a comparing list and viewing the list&quot;, &quot;Comparing two different products&quot;)">runScenario("Adding two products to a comparing list and viewing the list", "Comparing two different products")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding product to cart without any fields filled&quot;, &quot;Shopping cart&quot;)">runScenario("Adding product to cart without any fields filled", "Shopping cart")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Going into review section for the selected product and filling out a review&quot;, &quot;Leaving a review for...)">runScenario("Going into review section for the selected product and filling out a review", "Leaving a review for...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid email input during registration&quot;, &quot;Registration&quot;)">runScenario("Invalid email input during registration", "Registration")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Leaving a review without any fields filled&quot;, &quot;Product review&quot;)">runScenario("Leaving a review without any fields filled", "Product review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password input with greater than minimal required length during registration&quot;, &quot;Registration&quot;)">runScenario("Password input with greater than minimal required length during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding product to comparison list and viewing it by clicking the link from confirmation message&quot;, &quot;...)">runScenario("Adding product to comparison list and viewing it by clicking the link from confirmation message", "...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password input with smaller than minimal required length during registration&quot;, &quot;Registration&quot;)">runScenario("Password input with smaller than minimal required length during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register without any fields filled&quot;, &quot;Registration&quot;)">runScenario("Register without any fields filled", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password strength is very strong during registration&quot;, &quot;Registration&quot;)">runScenario("Password strength is very strong during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password input of minimal required length during registration&quot;, &quot;Registration&quot;)">runScenario("Password input of minimal required length during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding product to cart with all mandatory fields filled&quot;, &quot;Shopping cart&quot;)">runScenario("Adding product to cart with all mandatory fields filled", "Shopping cart")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding product to comparison list and viewing it by clicking the header link&quot;, &quot;Product comparison&quot;)">runScenario("Adding product to comparison list and viewing it by clicking the header link", "Product comparison")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register with all mandatory fields filled and subscription checked&quot;, &quot;Registration&quot;)">runScenario("Register with all mandatory fields filled and subscription checked", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Leaving a review with all mandatory fields filled&quot;, &quot;Product review&quot;)">runScenario("Leaving a review with all mandatory fields filled", "Product review")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password strength is strong during registration&quot;, &quot;Registration&quot;)">runScenario("Password strength is strong during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Password strength is weak during registration&quot;, &quot;Registration&quot;)">runScenario("Password strength is weak during registration", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MagentoStoreCucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register with all mandatory fields filled&quot;, &quot;Registration&quot;)">runScenario("Register with all mandatory fields filled", "Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,8 +220,98 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.MagentoStoreCucumberRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Matching passwords during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Matching passwords during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Matching passwords during registration", "Registration")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #password\-confirmation\-error
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [61c8aae7-4e9f-43eb-885f-979989cb83e5, findElement {using=id, value=password-confirmation-error}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:5381, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 96428, moz:profile: C:\Users\Juan\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:5381/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 61c8aae7-4e9f-43eb-885f-979989cb83e5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
+	at pageObjects.RegistrationPage.validateMatchingPasswords(RegistrationPage.java:155)
+	at stepDefinitions.RegistrationSteps.message_about_passwords_not_matching_should_not_appear(RegistrationSteps.java:124)
+	at ✽.Message about passwords not matching should not appear(file:///C:/Users/Juan/Documents/Programiranje/Selenium/SeleniumBDDShowcaseProject/src/test/java/features/Registration.feature:53)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Valid email input during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Valid email input during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Valid email input during registration", "Registration")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: #email_address\-error
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [15248087-f5c2-415f-9fd2-496fb4b223a8, findElement {using=id, value=email_address-error}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.1, moz:accessibilityChecks: false, moz:buildID: 20230608214645, moz:debuggerAddress: 127.0.0.1:12263, moz:geckodriverVersion: 0.33.0, moz:headless: true, moz:platformVersion: 10.0, moz:processID: 70356, moz:profile: C:\Users\Juan\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:12263/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 15248087-f5c2-415f-9fd2-496fb4b223a8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy28.isDisplayed(Unknown Source)
+	at pageObjects.RegistrationPage.validateEmailField(RegistrationPage.java:110)
+	at stepDefinitions.RegistrationSteps.message_about_changing_the_input_to_a_valid_format_should_not_appear(RegistrationSteps.java:81)
+	at ✽.Message about changing the input to a valid format should not appear(file:///C:/Users/Juan/Documents/Programiranje/Selenium/SeleniumBDDShowcaseProject/src/test/java/features/Registration.feature:33)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">runners.MagentoStoreCucumberRunner</span>
@@ -141,84 +319,220 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;User filling out required username and password and signing in&quot;, &quot;User sign in&quot;)">
-                  </a> <!-- runScenario("User filling out required username and password and signing in", "User sign in") -->
+                  <a name="runScenario(&quot;Remove product from comparison list&quot;, &quot;Product comparison&quot;)">
+                  </a> <!-- runScenario("Remove product from comparison list", "Product comparison") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("User filling out required username and password and signing in","User sign in")</span>
+                  <span class="parameters">("Remove product from comparison list", "Product comparison")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Picking color and size of the item and adding it to the shopping cart&quot;, &quot;Adding an item to the shop...)">
-                  </a> <!-- runScenario("Picking color and size of the item and adding it to the shopping cart", "Adding an item to the shop...) -->
+                  <a name="runScenario(&quot;Passwords not matching during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Passwords not matching during registration", "Registration") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Picking color and size of the item and adding it to the shopping cart","Adding an item to the shopping cart")</span>
+                  <span class="parameters">("Passwords not matching during registration", "Registration")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Adding two products to a comparing list and viewing the list&quot;, &quot;Comparing two different products&quot;)">
-                  </a> <!-- runScenario("Adding two products to a comparing list and viewing the list", "Comparing two different products") -->
+                  <a name="runScenario(&quot;Adding product to cart without any fields filled&quot;, &quot;Shopping cart&quot;)">
+                  </a> <!-- runScenario("Adding product to cart without any fields filled", "Shopping cart") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Adding two products to a comparing list and viewing the list","Comparing two different products")</span>
+                  <span class="parameters">("Adding product to cart without any fields filled", "Shopping cart")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Going into review section for the selected product and filling out a review&quot;, &quot;Leaving a review for...)">
-                  </a> <!-- runScenario("Going into review section for the selected product and filling out a review", "Leaving a review for...) -->
+                  <a name="runScenario(&quot;Invalid email input during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Invalid email input during registration", "Registration") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Going into review section for the selected product and filling out a review","Leaving a review for a product")</span>
+                  <span class="parameters">("Invalid email input during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Leaving a review without any fields filled&quot;, &quot;Product review&quot;)">
+                  </a> <!-- runScenario("Leaving a review without any fields filled", "Product review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Leaving a review without any fields filled", "Product review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password input with greater than minimal required length during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password input with greater than minimal required length during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password input with greater than minimal required length during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding product to comparison list and viewing it by clicking the link from confirmation message&quot;, &quot;...)">
+                  </a> <!-- runScenario("Adding product to comparison list and viewing it by clicking the link from confirmation message", "...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding product to comparison list and viewing it by clicking the link from confirmation message", "Product comparison")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password input with smaller than minimal required length during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password input with smaller than minimal required length during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password input with smaller than minimal required length during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register without any fields filled&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Register without any fields filled", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register without any fields filled", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password strength is very strong during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password strength is very strong during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password strength is very strong during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password input of minimal required length during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password input of minimal required length during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password input of minimal required length during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding product to cart with all mandatory fields filled&quot;, &quot;Shopping cart&quot;)">
+                  </a> <!-- runScenario("Adding product to cart with all mandatory fields filled", "Shopping cart") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding product to cart with all mandatory fields filled", "Shopping cart")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding product to comparison list and viewing it by clicking the header link&quot;, &quot;Product comparison&quot;)">
+                  </a> <!-- runScenario("Adding product to comparison list and viewing it by clicking the header link", "Product comparison") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding product to comparison list and viewing it by clicking the header link", "Product comparison")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with all mandatory fields filled and subscription checked&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Register with all mandatory fields filled and subscription checked", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with all mandatory fields filled and subscription checked", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Leaving a review with all mandatory fields filled&quot;, &quot;Product review&quot;)">
+                  </a> <!-- runScenario("Leaving a review with all mandatory fields filled", "Product review") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Leaving a review with all mandatory fields filled", "Product review")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password strength is strong during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password strength is strong during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password strength is strong during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Password strength is weak during registration&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Password strength is weak during registration", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Password strength is weak during registration", "Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Register with all mandatory fields filled&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("Register with all mandatory fields filled", "Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Register with all mandatory fields filled", "Registration")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Juan\Documents\Programiranje\Selenium\SeleniumBDDShowcaseProject\testng.xml</span>
+            <span class="header-content">C:\Users\Juan\AppData\Local\Temp\testng-eclipse-94818480\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;listeners.TestNGListeners&quot;/&gt;
-    &lt;listener class-name=&quot;listeners.AnnotationTransformer&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runners.MagentoStoreCucumberRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -231,62 +545,126 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.MagentoStoreCucumberRunner')
-data.setCell(0, 3, 25815);
+data.setCell(0, 3, 67355);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.MagentoStoreCucumberRunner')
-data.setCell(1, 3, 17395);
+data.setCell(1, 3, 67018);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.MagentoStoreCucumberRunner')
-data.setCell(2, 3, 16281);
+data.setCell(2, 3, 10854);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runners.MagentoStoreCucumberRunner')
-data.setCell(3, 3, 16043);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(3, 3, 10140);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(4, 3, 10095);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(5, 3, 9358);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(6, 3, 9240);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(7, 3, 7034);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(8, 3, 6859);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(9, 3, 6803);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(10, 3, 6721);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(11, 3, 6639);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(12, 3, 6615);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(13, 3, 6607);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(14, 3, 6376);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(15, 3, 6362);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(16, 3, 6294);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(17, 3, 6242);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(18, 3, 6091);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runners.MagentoStoreCucumberRunner')
+data.setCell(19, 3, 5699);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -294,33 +672,100 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.MagentoStoreCucumberRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@343727b5)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@7b6558aa)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Picking color and size of the item and adding it to the shopping cart", "Adding an item to the shop...)</span>
-                <span class="method-start">489 ms</span>
+                <span class="method-name">runScenario("Adding product to comparison list and viewing it by clicking the link from confirmation message", "...)</span>
+                <span class="method-start">610 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Adding two products to a comparing list and viewing the list", "Comparing two different products")</span>
-                <span class="method-start">17888 ms</span>
+                <span class="method-name">runScenario("Adding product to comparison list and viewing it by clicking the header link", "Product comparison")</span>
+                <span class="method-start">10707 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Going into review section for the selected product and filling out a review", "Leaving a review for...)</span>
-                <span class="method-start">43704 ms</span>
+                <span class="method-name">runScenario("Remove product from comparison list", "Product comparison")</span>
+                <span class="method-start">20066 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("User filling out required username and password and signing in", "User sign in")</span>
-                <span class="method-start">59748 ms</span>
+                <span class="method-name">runScenario("Leaving a review with all mandatory fields filled", "Product review")</span>
+                <span class="method-start">30920 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Leaving a review without any fields filled", "Product review")</span>
+                <span class="method-start">40161 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register without any fields filled", "Registration")</span>
+                <span class="method-start">46965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with all mandatory fields filled", "Registration")</span>
+                <span class="method-start">53687 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Register with all mandatory fields filled and subscription checked", "Registration")</span>
+                <span class="method-start">59982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid email input during registration", "Registration")</span>
+                <span class="method-start">67017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Valid email input during registration", "Registration")</span>
+                <span class="method-start">73260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password input with smaller than minimal required length during registration", "Registration")</span>
+                <span class="method-start">140617 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password input of minimal required length during registration", "Registration")</span>
+                <span class="method-start">147225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password input with greater than minimal required length during registration", "Registration")</span>
+                <span class="method-start">153317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Matching passwords during registration", "Registration")</span>
+                <span class="method-start">159694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Passwords not matching during registration", "Registration")</span>
+                <span class="method-start">226713 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password strength is weak during registration", "Registration")</span>
+                <span class="method-start">233076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password strength is strong during registration", "Registration")</span>
+                <span class="method-start">239691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Password strength is very strong during registration", "Registration")</span>
+                <span class="method-start">246551 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Adding product to cart with all mandatory fields filled", "Shopping cart")</span>
+                <span class="method-start">252251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Adding product to cart without any fields filled", "Shopping cart")</span>
+                <span class="method-start">262391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">76032 ms</span>
+                <span class="method-start">269031 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

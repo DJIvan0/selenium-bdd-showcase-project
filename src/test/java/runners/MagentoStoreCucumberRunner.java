@@ -3,12 +3,11 @@ package runners;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-//@RunWith(Cucumber.class)
 @CucumberOptions(
 		features=("src/test/java/features"),
-		glue=("stepDefinitions"),
+		glue={"stepDefinitions", "hooks"},
 		monochrome=true,
-		plugin= {"pretty","html:target/HtmlReports/report.html"}
+		plugin= {"pretty","html:target/HtmlReports/report.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 		)
 public class MagentoStoreCucumberRunner extends AbstractTestNGCucumberTests{
 

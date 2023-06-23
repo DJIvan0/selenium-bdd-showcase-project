@@ -5,9 +5,9 @@
     <classes>
       <class name="runners.MagentoStoreCucumberRunner">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="2"/>
+          <include name="runScenario" invocation-numbers="9 13"/>
           <include name="tearDownClass"/>
+          <include name="setUpClass"/>
         </methods>
       </class> <!-- runners.MagentoStoreCucumberRunner -->
     </classes>
